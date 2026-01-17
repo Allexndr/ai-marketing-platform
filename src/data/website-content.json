@@ -1,0 +1,58 @@
+{
+  "hero": {
+    "title": "Future of Marketing is AI",
+    "subtitle": "Transform your brand with next-generation AI models, automated content, and hyper-personalized experiences.",
+    "cta": "Get Started"
+  },
+  "about": {
+    "title": "About Us",
+    "description": "We are a collective of creative technologists and AI researchers dedicated to pushing the boundaries of digital marketing. Founded in 2024, we specialize in generative AI, virtual influencers, and automated localized content at scale."
+  },
+  "services": [
+    {
+      "id": "1",
+      "title": "AI Models & Influencers",
+      "description": "Custom-trained virtual influencers that perfectly embody your brand identity.",
+      "icon": "Bot"
+    },
+    {
+      "id": "2",
+      "title": "Hyper-Real Photography",
+      "description": "Studio-quality product photography generated instantly without physical shoots.",
+      "icon": "Camera"
+    },
+    {
+      "id": "3",
+      "title": "Automated Campaigns",
+      "description": "Data-driven marketing campaigns optimized by advanced machine learning algorithms.",
+      "icon": "Zap"
+    }
+  ],
+  "portfolio": [
+    {
+      "id": "1",
+      "title": "Cyber Fashion Week",
+      "image": "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?q=80&w=1000&auto=format&fit=crop"
+    },
+    {
+      "id": "2",
+      "title": "Neon City Promo",
+      "image": "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?q=80&w=1000&auto=format&fit=crop"
+    },
+    {
+      "id": "3",
+      "title": "Virtual Showroom",
+      "image": "https://images.unsplash.com/photo-1616469829581-73993eb86b02?q=80&w=1000&auto=format&fit=crop"
+    },
+    {
+      "id": "4",
+      "title": "AI Portrait Series",
+      "image": "https://images.unsplash.com/photo-1549488344-c1a7f79b9ebc?q=80&w=1000&auto=format&fit=crop"
+    }
+  ],
+  "contact": {
+    "email": "contact@ai-agency.com",
+    "instagram": "@ai_agency",
+    "telegram": "@ai_agency_bot"
+  }
+}
