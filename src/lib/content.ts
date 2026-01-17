@@ -28,14 +28,17 @@ export type WebsiteContent = {
 };
 
 export async function getWebsiteContent(): Promise<WebsiteContent> {
-  const res = await fetch('http://localhost:3000/api/admin/content', {
-    next: { revalidate: 0 },
-    method: "GET",
-    headers: { "Content-Type": "application/json" }
-  });
+  try {
+    const res = await fetch('/api/admin/content', {
+      next: { revalidate: 0 },
+      method: "GET",
+      headers: { "Content-Type": "application/json" }
+    });
 
-  if (!res.ok) {
-    console.error("Failed to fetch content via API");
+    if (!res.ok) throw new Error("Status code " + res.status);
+    return res.json();
+  } catch (error) {
+    console.error("Failed to fetch content via API:", error);
     // Fallback if API fails
     return {
       hero: { title: "Elevating Brands", subtitle: "Beyond Reality.", cta: "Inquire" },
@@ -56,5 +59,4 @@ export async function getWebsiteContent(): Promise<WebsiteContent> {
       contact: { email: "", instagram: "", telegram: "" }
     };
   }
-  return res.json();
 }
